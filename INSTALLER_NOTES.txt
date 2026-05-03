@@ -1,0 +1,21 @@
+Modrinth ReShade Installer
+
+What it does:
+- Downloads the latest official ReShade installer from reshade.me
+- Lets you choose a Modrinth profile
+- Clones the right Modrinth Java runtime into that profile as reshade-java
+- Installs ReShade into the cloned javaw.exe with OpenGL
+- Copies the bundled Kyubus preset you are currently using
+- Updates the Modrinth profile override_java_path automatically
+
+Files:
+- Modrinth ReShade Installer.exe
+- modrinth_reshade_installer.pyw
+- kyubus-current-preset
+
+Notes:
+- Restart Modrinth after installing if it was already open.
+- The bundled preset is embedded inside the executable and is also included next to it for inspection.
+- ReShade itself is downloaded from the official site at install time.
+- The source code is included so other people can inspect exactly what the installer does.
+- I did not add anything to bypass antivirus or malware scanners.
