@@ -1,0 +1,25 @@
+Transparency and Privacy Notes
+
+What this installer does:
+- Reads the local Modrinth profile list from %APPDATA%\ModrinthApp\app.db
+- Lets the user choose a profile
+- Downloads the official ReShade installer from reshade.me
+- Clones a Modrinth Java runtime into the selected profile as reshade-java
+- Runs the official ReShade installer in headless OpenGL mode against that profile-local javaw.exe
+- Copies the embedded Kyubus preset bundle into the selected profile-local Java bin folder
+- Updates only the selected profile's override_java_path in the Modrinth profiles database
+
+What this installer does not do:
+- It does not upload data anywhere except the one download request to the official ReShade site
+- It does not contact any third-party telemetry service
+- It does not modify every Modrinth profile at once
+- It does not contain the original user's profile name or username in the rebuilt executable, based on a direct string scan for obvious identifiers
+
+Trust signals included in this folder:
+- Source code: modrinth_reshade_installer.pyw
+- Embedded preset copy for inspection: kyubus-current-preset
+- Hash file: SHA256.txt
+
+Important:
+- No one can honestly guarantee that every antivirus or multi-engine scanner will mark a custom executable as clean.
+- The safest trust model is to inspect the included source and compare the hash of the executable you distribute.
