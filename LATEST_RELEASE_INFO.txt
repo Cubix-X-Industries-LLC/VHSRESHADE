@@ -1,0 +1,12 @@
+Current local built artifacts
+
+Modrinth ReShade Installer.exe
+SHA256: 345F46EAF6A0369AB1EA6E465D95C232926D99978EDA7E95D3AB37363D076751
+
+Modrinth_ReShade_Profile_Installer.zip
+SHA256: A561354036D301724243E117A0F1A38E5E9BC1A750D5A11E11943B88A49402BF
+
+Notes:
+- These hashes refer to the current local build artifacts.
+- This repo contains the published source and preset config files.
+- A formal GitHub Release entry was not created by this session.
